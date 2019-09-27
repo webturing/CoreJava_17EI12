@@ -10,4 +10,8 @@ public class PrimerTest {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        System.out.println(prime(100000007));
+    }
 }

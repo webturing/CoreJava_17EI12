@@ -16,14 +16,14 @@ public class ArrayDemo {
         }
         System.out.println();
         //output 2 for_each readOnly
-        for(int e:c){
+        for (int e : c) {
             e++;
-            System.out.print(e+" ");
+            System.out.print(e + " ");
         }
         System.out.println();
         //output 3 dump array
         System.out.println(Arrays.toString(c));
-        int []d=new int[]{3,4,5,6};
+        int[] d = new int[]{3, 4, 5, 6};
 
     }
 }

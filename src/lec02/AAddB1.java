@@ -1,5 +1,7 @@
 package lec02;
+
 import java.util.Scanner;
+
 public class AAddB1 {
     /**
      * @param args

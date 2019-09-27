@@ -11,6 +11,6 @@ public class Gcd {
     }
 
     static int lcm(int a, int b) {
-        return a  / gcd(a, b)* b;
+        return a / gcd(a, b) * b;
     }
 }
