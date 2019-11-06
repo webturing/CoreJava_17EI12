@@ -1,7 +1,5 @@
 package lec06;
 
-import java.util.Arrays;
-
 public class StringAPI {
     /**
      * \d=[0-9] (0|1|2|3...|9)
