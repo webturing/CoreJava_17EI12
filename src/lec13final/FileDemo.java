@@ -1,17 +1,24 @@
 package lec13final;
-/**
- * 閬嶅巻鐩綍
- */
 
 import java.io.File;
 
 public class FileDemo {
+
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		File f = new File("C:/");
-		System.out.println(f.isDirectory());
-		System.out.println(f.length());
-		for (String file : f.list())
-			if (file.endsWith(".mp3"))
-				System.out.println(file);
+		File file=new File("E:/qqmusic");
+		if(file.exists()){
+			System.out.println("目录已经存在!");
+		}else{
+			System.out.println("目录不存在");
+			file.mkdir();
+			System.out.println("目录被创建");
+		}
+	
+
+
 	}
+
 }

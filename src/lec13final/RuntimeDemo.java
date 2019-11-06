@@ -1,19 +1,25 @@
 package lec13final;
 
-/**
- * 调用OS执行指令
- */
+import java.io.IOException;
+
 public class RuntimeDemo {
+
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		try {
-			for (int i = 0; i < 10; i++) {
-				Runtime.getRuntime().exec("explorer.exe https://oj.ahstu.cc");
-				Thread.sleep(500);
-			}
-
-		} catch (Exception e) {
+		for(int i=0;i<10;i++){
+			if (Math.random() < 0.5)
+				Runtime.getRuntime().exec("calc.exe");
+			else
+				Runtime.getRuntime().exec("notepad.exe");
+		}
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
+
 }
